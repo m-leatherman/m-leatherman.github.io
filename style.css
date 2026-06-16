@@ -46,28 +46,3 @@ button {
 button:hover {
     background-color: #2980b9;
 }
-hr {
-margin: 40px 0;
-border: 0;
-border-top: 1px solid #ddd;
-}
-
-.product-card {
-border: 1px solid #ccc;
-padding: 15px;
-border-radius: 8px;
-background-color: #fafafa;
-margin-bottom: 20px;
-}
-
-.cart-section {
-text-align: left;
-background: #e8f4f8;
-padding: 20px;
-border-radius: 8px;
-}
-
-#cartItems {
-list-style-type: square;
-padding-left: 20px;
-}
