@@ -1,4 +1,4 @@
-# Simple 3-Page Website
+# m-leatherman.github.io (Simple 3-Page Website)
 
 ## Project Overview
 This is a simple, multi-page website using HTML, CSS, and JavaScript. I built this project to understand how websites are put together under the hood.
