@@ -1,4 +1,3 @@
-# m-leatherman.github.io
 # Simple Static Web Application
 
 ## Project Overview
