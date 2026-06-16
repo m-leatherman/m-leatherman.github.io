@@ -1,21 +1,20 @@
-# Simple Static Web Application
+# Simple 3-Page Website
 
 ## Project Overview
-This is a static, multi-page web application built entirely with HTML, CSS, and vanilla JavaScript. I designed this as a practice environment for vulnerability scanning and to demonstrate a clear understanding of secure file linking and client-side web interactions.
+This is a simple, multi-page website built entirely from scratch using HTML, CSS, and JavaScript. I built this project to understand how websites are put together under the hood, and to give myself a safe, functional environment to practice vulnerability scanning.
 
-## Architecture & File Structure
-I kept the architecture intentionally simple. All of the files live in the same root directory. Because of this, I was able to use **relative paths** to link them all together natively, which makes the site incredibly fast and easy to maintain.
+## How It Is Organized
+I kept the setup as simple as possible. All of the files live in the exact same folder. Because they sit right next to each other, they can link together easily and the website runs very fast.
 
-## Technology Stack & Implementation
+## How The Pieces Work Together
 
-### 1. HTML (Structure)
-I built three static HTML pages (`index.html`, `about.html`, `contact.html`) to act as the skeleton of the site. 
-* I utilized semantic tags like `<nav>` and `<main>` to ensure the code is highly readable. 
-* To give vulnerability scanners tangible input areas to test, I integrated user-input elements, specifically a clickable `<button>` and a mock `<form>`.
-* *Note:* The form utilizes `onsubmit="return false;"` to prevent the page from refreshing and attempting to send data to a non-existent backend, handing control safely to the JavaScript instead.
+### 1. HTML (The Structure)
+I built three pages (`index.html`, `about.html`, and `contact.html`) to act as the skeleton of the site. 
+* I included a mock contact form and a clickable button. I did this specifically so that security scanners have interactive areas to test.
+* I programmed the contact form so it won't accidentally try to send real data anywhere. It just acts as a placeholder to practice with.
 
-### 2. CSS (Styling)
-Instead of relying on inline styling, I utilized a single **external stylesheet** (`style.css`). All three HTML pages link back to this centralized file. This ensures design consistency across the application and means global visual changes only require editing one line of code.
+### 2. CSS (The Design)
+Instead of styling each page one by one, I created one master design file called `style.css`. All three of my web pages look at this single file for their colors and layout. This means if I ever want to change the background color of the whole website, I only have to update it in one place.
 
-### 3. JavaScript (Interactivity)
-The JavaScript (`script.js`) handles all client-side interactivity. The core of the script relies on a `DOMContentLoaded` event listener. This ensures the browser waits until the HTML DOM is fully constructed before executing any scripts, preventing load errors. Once loaded, it successfully captures user clicks and executes simulated actions via browser alerts.
+### 3. JavaScript (The Interactivity)
+The JavaScript (`script.js`) makes the buttons actually work. The most important part of my script is that it tells the browser to wait until the web page is 100% finished loading before it turns on. This prevents the code from breaking, and allows my pop-up alerts to work smoothly when someone clicks a button.
